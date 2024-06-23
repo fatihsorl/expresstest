@@ -4,19 +4,157 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="tailwind.css" rel="stylesheet"></head>
-<body>
-    <div class="mx-12">
-        <div class="text-neutral-700 text-3xl py-10">
-            Selamlar
+    <link href="tailwind.css" rel="stylesheet">
+</head>
+    <body>
+
+    <div class="leading-normal tracking-normal text-indigo-400 bg-cover h-screen" style="background-image: url('header.png')">
+<!--Nav-->
+<div class="container px-8 md:mx-auto flex items-center justify-between pt-5">
+    <div>
+        <a class="flex items-center text-indigo-400 no-underline hover:no-underline font-bold text-2xl lg:text-5xl xl:text-6xl" href="/">
+            Rain
+            <span class="bg-clip-text text-transparent bg-gradient-to-r from-green-400 via-pink-500 to-purple-500">
+              blur
+          </span>
+          </a>
+
+    </div>
+      <ul class="flex items-center space-x-6">
+        <li>
+            <a class="text-lg md:text-xl xl:text-2xl inline-block text-blue-300 no-underline hover:text-pink-500 hover:text-underline text-center transform hover:scale-125 duration-300 ease-in-out" href="about.html">
+                Hakkımızda
+              </a>
+        </li>
+        <li>
+            <a class="text-lg md:text-xl xl:text-2xl inline-block text-blue-300 no-underline hover:text-pink-500 hover:text-underline text-center transform hover:scale-125 duration-300 ease-in-out"href="templates.html">
+                Şablonlarımız
+              </a>
+        </li>
+        
+    </ul>
+  </div>
+
+  <!--Main-->
+  <div class="container px-8 pt-10 md:pt-12 2xl:pt-80 mx-auto flex flex-wrap flex-col md:flex-row items-center">
+    <!--Left Col-->
+    <div class="flex flex-col w-full xl:w-2/5 justify-center lg:items-start overflow-y-hidden">
+      <h1 class="my-4 text-3xl md:text-5xl text-white opacity-75 font-bold leading-tight text-center md:text-left">
+        Bir
+        <span class="bg-clip-text text-transparent bg-gradient-to-r from-green-400 via-pink-500 to-purple-500">
+          Website'ye
+        </span>
+        mi ihtiyacın var?
+      </h1>
+      <p class="leading-normal text-base md:text-2xl mb-8 text-center md:text-left">
+        İşletmeni en güzel şekilde tanıtacak bir websitesi için bizimle
+        iletişime geç.
+      </p>
+
+      <form class="bg-gray-900 opacity-75 w-full shadow-lg rounded-lg px-8 pt-6 pb-8 mb-4">
+        <div class="mb-4">
+          <label
+            class="block text-blue-300 py-2 font-bold mb-2"
+            for="emailaddress"
+          >
+            Bizimle İletişime Geç
+          </label>
+          <input
+            class="shadow appearance-none border rounded w-full p-3 text-gray-700 leading-tight focus:ring transform transition hover:scale-105 duration-300 ease-in-out"
+            id="emailaddress"
+            type="text"
+            placeholder="Merhaba, websitesine ihtiyacım var!"
+          >
+        </input>
         </div>
-        <div class="space-x-4">
-            <a href="about.html">Hakkında Sayfasına Git</a>
-            <a href="contact.html">İletişim Sayfasına Git</a>
+
+        <div class="flex items-center justify-between pt-4">
+          <button
+            class="bg-gradient-to-r from-purple-800 to-green-500 hover:from-pink-500 hover:to-green-500 text-white font-bold py-2 px-4 rounded focus:ring transform transition hover:scale-105 duration-300 ease-in-out"
+            type="button"
+          >
+            Gönder
+          </button>
         </div>
+      </form>
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="js/main.js"></script>
-</body>
+    <!--Right Col-->
+    <div class="w-full xl:w-3/5 p-12 overflow-hidden">
+      <img
+        class="mx-auto w-full md:w-4/5 transform -rotate-6 transition hover:scale-105 duration-700 ease-in-out hover:rotate-6"
+        src="macbook.svg"
+      />
+    </div>
+  </div>
+    </div>
+    <div class="bg-cover relative" style="background-image: url('bg.png')">
+        <div class="container mx-auto">
+            <!--Template Col-->
+            <div class="md:pt-24 w-full">
+                <p class="text-blue-400 font-bold pb-16 lg:pb-24 text-center text-4xl">
+                  Siteni kişiselleştir, şablonlarımıza göz at!
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-16">
+                  <div class="hidden transform hover:scale-125 hover:bg-opacity duration-300 hover:z-50 min-h-[400px] min-w-[360px] ease-in-out relative flex-col mx-auto text-black font-light text-sm rounded-md bg-white md:flex items-center justify-center group overflow-hidden shadow-[0_10px_20px_rgba(240,_46,_170,_0.7)] bg-cover bg-no-repeat" style="background-image: url('testimg2.png');">
+                      <button class="px-4 py-2 rounded-md bg-black text-white hidden group-hover:block border mb-4 hover:scale-125 transition duration-300 text-xs">Demo</button>
+                      <button class="px-4 py-2 rounded-md bg-black text-white hidden group-hover:block border mb-4 hover:scale-125 transition duration-300 text-xs">Detayları Göster</button>
+                  </div>
+
+                  <div class="hidden transform hover:scale-125 hover:bg-opacity duration-300 hover:z-50 min-h-[400px] min-w-[360px] ease-in-out relative flex-col mx-auto text-black font-light text-sm rounded-md bg-white md:flex items-center justify-center group overflow-hidden shadow-[0_10px_20px_rgba(240,_46,_170,_0.7)] bg-cover bg-no-repeat" style="background-image: url('testimg2.png');">
+                    <button class="px-4 py-2 rounded-md bg-black text-white hidden group-hover:block border mb-4 hover:scale-125 transition duration-300 text-xs">Demo</button>
+                    <button class="px-4 py-2 rounded-md bg-black text-white hidden group-hover:block border mb-4 hover:scale-125 transition duration-300 text-xs">Detayları Göster</button>
+                </div>
+
+                <div class="md:hidden transform md:hover:scale-125 hover:bg-opacity duration-300 hover:z-50 min-h-[400px] min-w-[360px] ease-in-out relative flex-col mx-auto text-black font-light text-sm rounded-md bg-white flex items-center justify-center group overflow-hidden shadow-[0_10px_20px_rgba(240,_46,_170,_0.7)] bg-cover bg-no-repeat" style="background-image: url('testimg2.png');">
+                  <button class="px-4 py-2 rounded-md bg-black text-white  group-hover:block border mb-4 hover:scale-125 transition duration-300 text-xs">Demo</button>
+                  <button class="px-4 py-2 rounded-md bg-black text-white  group-hover:block border mb-4 hover:scale-125 transition duration-300 text-xs">Detayları Göster</button>
+              </div>
+              <div class="hidden transform hover:scale-125 hover:bg-opacity duration-300 hover:z-50 min-h-[400px] min-w-[360px] ease-in-out relative flex-col mx-auto text-black font-light text-sm rounded-md bg-white md:flex items-center justify-center group overflow-hidden shadow-[0_10px_20px_rgba(240,_46,_170,_0.7)] bg-cover bg-no-repeat" style="background-image: url('testimg2.png');">
+                <button class="px-4 py-2 rounded-md bg-black text-white hidden group-hover:block border mb-4 hover:scale-125 transition duration-300 text-xs">Demo</button>
+                <button class="px-4 py-2 rounded-md bg-black text-white hidden group-hover:block border mb-4 hover:scale-125 transition duration-300 text-xs">Detayları Göster</button>
+            </div>
+
+            <div class="md:hidden transform md:hover:scale-125 hover:bg-opacity duration-300 hover:z-50 min-h-[400px] min-w-[360px] ease-in-out relative flex-col mx-auto text-black font-light text-sm rounded-md bg-white flex items-center justify-center group overflow-hidden shadow-[0_10px_20px_rgba(240,_46,_170,_0.7)] bg-cover bg-no-repeat" style="background-image: url('testimg2.png');">
+              <button class="px-4 py-2 rounded-md bg-black text-white  group-hover:block border mb-4 hover:scale-125 transition duration-300 text-xs">Demo</button>
+              <button class="px-4 py-2 rounded-md bg-black text-white  group-hover:block border mb-4 hover:scale-125 transition duration-300 text-xs">Detayları Göster</button>
+          </div>
+          <div class="hidden transform hover:scale-125 hover:bg-opacity duration-300 hover:z-50 min-h-[400px] min-w-[360px] ease-in-out relative flex-col mx-auto text-black font-light text-sm rounded-md bg-white md:flex items-center justify-center group overflow-hidden shadow-[0_10px_20px_rgba(240,_46,_170,_0.7)] bg-cover bg-no-repeat" style="background-image: url('testimg2.png');">
+            <button class="px-4 py-2 rounded-md bg-black text-white hidden group-hover:block border mb-4 hover:scale-125 transition duration-300 text-xs">Demo</button>
+            <button class="px-4 py-2 rounded-md bg-black text-white hidden group-hover:block border mb-4 hover:scale-125 transition duration-300 text-xs">Detayları Göster</button>
+        </div>
+
+        <div class="md:hidden transform md:hover:scale-125 hover:bg-opacity duration-300 hover:z-50 min-h-[400px] min-w-[360px] ease-in-out relative flex-col mx-auto text-black font-light text-sm rounded-md bg-white flex items-center justify-center group overflow-hidden shadow-[0_10px_20px_rgba(240,_46,_170,_0.7)] bg-cover bg-no-repeat" style="background-image: url('testimg2.png');">
+          <button class="px-4 py-2 rounded-md bg-black text-white  group-hover:block border mb-4 hover:scale-125 transition duration-300 text-xs">Demo</button>
+          <button class="px-4 py-2 rounded-md bg-black text-white  group-hover:block border mb-4 hover:scale-125 transition duration-300 text-xs">Detayları Göster</button>
+      </div>
+      <div class="hidden transform hover:scale-125 hover:bg-opacity duration-300 hover:z-50 min-h-[400px] min-w-[360px] ease-in-out relative flex-col mx-auto text-black font-light text-sm rounded-md bg-white md:flex items-center justify-center group overflow-hidden shadow-[0_10px_20px_rgba(240,_46,_170,_0.7)] bg-cover bg-no-repeat" style="background-image: url('testimg2.png');">
+        <button class="px-4 py-2 rounded-md bg-black text-white hidden group-hover:block border mb-4 hover:scale-125 transition duration-300 text-xs">Demo</button>
+        <button class="px-4 py-2 rounded-md bg-black text-white hidden group-hover:block border mb-4 hover:scale-125 transition duration-300 text-xs">Detayları Göster</button>
+    </div>
+
+    <div class="md:hidden transform md:hover:scale-125 hover:bg-opacity duration-300 hover:z-50 min-h-[400px] min-w-[360px] ease-in-out relative flex-col mx-auto text-black font-light text-sm rounded-md bg-white flex items-center justify-center group overflow-hidden shadow-[0_10px_20px_rgba(240,_46,_170,_0.7)] bg-cover bg-no-repeat" style="background-image: url('testimg2.png');">
+      <button class="px-4 py-2 rounded-md bg-black text-white  group-hover:block border mb-4 hover:scale-125 transition duration-300 text-xs">Demo</button>
+      <button class="px-4 py-2 rounded-md bg-black text-white  group-hover:block border mb-4 hover:scale-125 transition duration-300 text-xs">Detayları Göster</button>
+  </div>
+                </div>
+              </div>
+          
+              <!--Footer-->
+              <div class="w-full pt-16 pb-6 text-sm text-center md:text-left fade-in">
+                <a class="text-gray-500 no-underline hover:no-underline" href="#"
+                  >&copy; App 2024</a
+                >
+                - Owner of
+                <a
+                  class="text-gray-500 no-underline hover:no-underline"
+                  href="https://www.google.com"
+                  >fatihsoral</a
+                >
+              </div>
+        </div>
+    </div>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
 </html>
